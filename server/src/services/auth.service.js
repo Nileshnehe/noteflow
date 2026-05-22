@@ -19,5 +19,7 @@ export const registerUser = async ({ name, email, password }) => {
         email,
         password:hashPassword,
     })
+
+    return user
 }
 

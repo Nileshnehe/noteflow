@@ -11,7 +11,7 @@ export const register = async (req, res, next) => {
             data: {
                 id: user._id || user.id,
                 name: user.name,
-                email: user.name
+                email: user.email
             }
         })
     } catch (error) {

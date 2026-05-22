@@ -4,6 +4,9 @@ import { register } from "../controllers/auth.controller.js";
 
 const router = Router();
 
+router.get("/healthz", (req, res) => {
+    {mesaage: "ok"}
+})
 router.post("/register", register);
 
 export default router;
